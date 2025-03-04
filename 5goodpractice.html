@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Goodbye</title>
+        <script>
+            function goodbye(){
+                /*In the below line the heading is declared as a constant which can not be changed,
+                document.querySelector is assigned to heading and this prevents repetition of the same thing in the code.
+                This practice ensures clean code while maintaining its readability.*/
+                const heading = document.querySelector('h1')
+                if(heading.innerHTML === 'Hello!'){
+                    heading.innerHTML = 'Goodbye.'
+                }
+                else{
+                    heading.innerHTML = 'Hello!'
+                }
+            }
+        </script>
+        <style>
+            h1{
+                text-align: center;
+                margin-top: 300px;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 2px;
+            }
+            button{
+                padding: 10px;
+                margin-left: 47.5%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <button onclick = "goodbye()">Click Here</button>
+    </body>
+</html>
