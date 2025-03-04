@@ -1,1 +1,2 @@
-# jspractice
+This repository contains various JavaScript files which were done for practice and understanding purposes only. 
+These files contain JavaScript code and some comments for better understanding of the program.
